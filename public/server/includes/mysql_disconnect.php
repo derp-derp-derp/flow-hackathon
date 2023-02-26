@@ -1,2 +1,2 @@
 <?php
-$conn->close();
+$mysqli_connection->close();
