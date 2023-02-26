@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="derp3x">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Flovatar Watcher</title>
+</head>
+<body>
+
+<form id="new_alert_form">
+    <h1>Add New Alert</h1>
+    
+    <label for="entity">Entity</label><br>
+    <select name="entity" id="entity">
+        <option value="flovatar">Flovatar</option>
+    </select>
+    
+    <br><br>
+    
+    <label for="rarity">Rarity</label><br>
+    <select name="rarity" id="rarity">
+        <option value="">All</option>
+        <option value="common">Common</option>
+        <option value="rare">Rare</option>
+        <option value="epic">Epic</option>
+        <option value="legendary">Legendary</option>
+    </select>
+    
+    <br><br>
+    
+    <label for="rarity">Condition</label><br>
+    <select name="condition" id="condition">
+        <option value="sold">Sold</option>
+        <option value="minted">Minted</option>
+        <option value="listed_sale">Listed for Sale</option>
+        <option value="removed_sale">Removed from Sale</option>
+    </select>
+    
+    <br><br>
+    
+    <input type="submit" value="Add">
+</form>
+
+<div id="alerts_list_container">
+    
+    <h2>My Alerts</h2>
+    
+    <ol id="alerts_list"></ol>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html> 

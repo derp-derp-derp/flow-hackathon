@@ -1,0 +1,5 @@
+.remove_alert_link {
+    cursor: pointer;
+    color: #ff0000;
+    text-decoration: underline;
+}
